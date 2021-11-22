@@ -31,8 +31,8 @@
         <p><em>There is an untold story behind every favorite song.</em></p>
 
         <div class="hero_buttons">
-          <a href="#">LATEST ALBUM</a>
-          <a href="#">LIVE DATES</a>
+          <a href="#" id="latest_album" class="hero_focus"  @click="buttonFocus">LATEST ALBUM</a>
+          <a href="#" id="live_dates"  @click="buttonFocus">LIVE DATES</a>
         </div>
       </div>
     </div>
@@ -54,6 +54,12 @@ export default {
 
           const navBar = document.querySelector(".navbar")
           navBar.classList.toggle("navbar_bg_red")
+      },
+      buttonFocus(){
+          const latestAlbum = document.getElementById("latest_album")
+          const liveDates = document.getElementById("live_dates")
+          latestAlbum.classList.toggle("hero_focus")
+          liveDates.classList.toggle("hero_focus")
       }
   }
 };
