@@ -1,0 +1,39 @@
+$mid_gray: #6b6b6c;
+$charade: #272b34;
+$charade_2: #292d39;
+$blue_zodiac: #0b2037;
+
+.main{
+    h2{
+        font-size: 50px;
+        color: white;
+    }
+    .small_text{
+        font-size: 14px;
+        color: $mid_gray;
+    }
+
+    .main_text_section{
+        text-align: center;
+        width: 50%;
+        padding: 40px 0;
+        h2{
+            padding: 40px 0;
+            border-bottom: 1px solid $mid_gray;
+        }
+        p{
+            padding: 40px 0;
+        }
+    }
+    .brake{
+        background-color: $charade_2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news{
+        background-color: $charade;
+        display: flex;
+        justify-content: center;
+    }
+}
