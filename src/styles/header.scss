@@ -1,0 +1,22 @@
+.header{
+    height: 100vh; //giusto per visualizzare 
+    background-image: url("assets/images/home_slider.jpg");
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 25px 50px;
+        .hamburger_menu{
+            i{
+                color: white;
+                font-size: 30px;
+            }
+        }
+        .navbar_logo_container{
+            flex-grow: 1;
+            img{
+                height: 50px;
+            }
+        }
+        
+    }
+}
