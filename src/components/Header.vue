@@ -2,7 +2,9 @@
   <div class="header">
     <div class="navbar">
       <div class="navbar_logo_container">
-        <img src="@/assets/images/avada-music-logo.png" alt="" />
+        <a href="#">
+          <img src="@/assets/images/avada-music-logo.png" alt="" />
+        </a>
       </div>
 
       <div class="hamburger_menu">
@@ -13,9 +15,9 @@
 
         <div class="hamburger_menu_collapse">
           <ul>
-            <li v-for="item, i in hamburgerMenuList"
-            :key="i"
-            ><a href="#">{{item}}</a></li>
+            <li v-for="(item, i) in hamburgerMenuList" :key="i">
+              <a href="#">{{ item }}</a>
+            </li>
             <!-- <li><a href="#">Meet The Band</a></li>
             <li><a href="#">Live Dates</a></li>
             <li><a href="#">Latest News</a></li>
@@ -33,8 +35,10 @@
         <p><em>There is an untold story behind every favorite song.</em></p>
 
         <div class="hero_buttons">
-          <a href="#" id="latest_album" class="hero_focus"  @click="buttonFocus">LATEST ALBUM</a>
-          <a href="#" id="live_dates"  @click="buttonFocus">LIVE DATES</a>
+          <a href="#" id="latest_album" class="hero_focus" @click="buttonFocus"
+            >LATEST ALBUM</a
+          >
+          <a href="#" id="live_dates" @click="buttonFocus">LIVE DATES</a>
         </div>
       </div>
     </div>
@@ -45,28 +49,28 @@
 export default {
   name: "Header",
   props: {
-      hamburgerMenuList: Array
+    hamburgerMenuList: Array,
   },
   methods: {
-      hamburgerMenu(){
-          //quando viene premuta l'icona viene visualizzata l'altra icona e viene visualizzato l'hamburger menu espanso
-          const hamMenuBars = document.querySelector(".fa-bars");
-          const hamMenuTimes = document.querySelector(".fa-times");
-          const hamMenuExpand = document.querySelector(".hamburger_menu_collapse")
-          hamMenuBars.classList.toggle("icon_active");
-          hamMenuTimes.classList.toggle("icon_active");
-          hamMenuExpand.classList.toggle("hamburger_menu_expand");
+    hamburgerMenu() {
+      //quando viene premuta l'icona viene visualizzata l'altra icona e viene visualizzato l'hamburger menu espanso
+      const hamMenuBars = document.querySelector(".fa-bars");
+      const hamMenuTimes = document.querySelector(".fa-times");
+      const hamMenuExpand = document.querySelector(".hamburger_menu_collapse");
+      hamMenuBars.classList.toggle("icon_active");
+      hamMenuTimes.classList.toggle("icon_active");
+      hamMenuExpand.classList.toggle("hamburger_menu_expand");
 
-          const navBar = document.querySelector(".navbar")
-          navBar.classList.toggle("navbar_bg_red")
-      },
-      buttonFocus(){
-          const latestAlbum = document.getElementById("latest_album")
-          const liveDates = document.getElementById("live_dates")
-          latestAlbum.classList.toggle("hero_focus")
-          liveDates.classList.toggle("hero_focus")
-      }
-  }
+      const navBar = document.querySelector(".navbar");
+      navBar.classList.toggle("navbar_bg_red");
+    },
+    buttonFocus() {
+      const latestAlbum = document.getElementById("latest_album");
+      const liveDates = document.getElementById("live_dates");
+      latestAlbum.classList.toggle("hero_focus");
+      liveDates.classList.toggle("hero_focus");
+    },
+  },
 };
 </script>
 
