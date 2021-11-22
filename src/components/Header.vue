@@ -10,7 +10,18 @@
       </div>
     </div>
 
-    <div class="hero"></div>
+    <div class="hero">
+        <div class="hero_text">
+            <h1>Untold Stories</h1>
+
+            <p><em>There is an untold story behind every favorite song.</em></p>
+
+            <div class="hero_buttons">
+                <a href="#">LATEST ALBUM</a>
+                <a href="#">LIVE DATES</a>
+            </div>
+        </div>
+    </div>
   </div>
 </template>
 
