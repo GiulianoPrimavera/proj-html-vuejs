@@ -12,6 +12,10 @@ $color_red: #ea4a56;
         display: flex;
         align-items: center;
         padding: 25px 50px;
+        transition: .2s;
+        &.navbar_bg_red{
+            background-color: $color_red;
+        }
         .navbar_logo_container{
             flex-grow: 1;
             img{
@@ -20,6 +24,8 @@ $color_red: #ea4a56;
         }
 
         .hamburger_menu_icon{
+            padding: 5px;
+            cursor: pointer;
             i{
                 color: white;
                 font-size: 30px;
@@ -27,19 +33,21 @@ $color_red: #ea4a56;
                     display: none;
                 }
                 &.fa-bars{
-                    display: inline-block;
+                    display: none;
+                }
+                &.icon_active{
+                    display: block;
                 }
             }
         }
-        .hamburger_menu_expand{
-            background-color: $color_red;
+        .hamburger_menu_collapse{
             position: absolute;
             top: 100px;
-            height: 100vh;
             right: 0;
             left: 0;
             color: white;
-            display: none;
+            opacity: 0;
+            transition: .3s;
             ul{
                 text-align: center;
                 padding-top: 20px;
@@ -53,11 +61,15 @@ $color_red: #ea4a56;
                     }
                 }
             }
-        }    
+        }   
+        .hamburger_menu_expand{
+            opacity: 1;
+            background-color: $color_red;
+        }
     }
 
     .hero{
-        padding: 100px;
+        padding: 150px;
         display: flex;
         align-items: center;
         justify-content: center;

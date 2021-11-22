@@ -6,12 +6,12 @@
       </div>
 
       <div class="hamburger_menu">
-        <div class="hamburger_menu_icon">
-          <i class="fas fa-bars"></i>
+        <div class="hamburger_menu_icon" @click="hamburgerMenu">
+          <i class="fas fa-bars icon_active"></i>
           <i class="fas fa-times"></i>
         </div>
 
-        <div class="hamburger_menu_expand">
+        <div class="hamburger_menu_collapse">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Meet The Band</a></li>
@@ -42,6 +42,20 @@
 <script>
 export default {
   name: "Header",
+  methods: {
+      hamburgerMenu(){
+          //quando viene premuta l'icona viene visualizzata l'altra icona e viene visualizzato l'hamburger menu espanso
+          const hamMenuBars = document.querySelector(".fa-bars");
+          const hamMenuTimes = document.querySelector(".fa-times");
+          const hamMenuExpand = document.querySelector(".hamburger_menu_collapse")
+          hamMenuBars.classList.toggle("icon_active");
+          hamMenuTimes.classList.toggle("icon_active");
+          hamMenuExpand.classList.toggle("hamburger_menu_expand");
+
+          const navBar = document.querySelector(".navbar")
+          navBar.classList.toggle("navbar_bg_red")
+      }
+  }
 };
 </script>
 
