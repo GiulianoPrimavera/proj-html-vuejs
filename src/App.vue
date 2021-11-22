@@ -3,14 +3,16 @@
     <Header>
       <!-- navbar -->
       <!-- hamburgher menu -->
-    </Header>
 
-    <Main>
-      <!-- Sezione Hero
+       <!-- Sezione Hero
         titolo
         sottotitolo
         bottoni link -->
 
+    </Header>
+
+    <Main>
+     
       <!-- Sezione Brake
         titolo
         sottotitolo -->
