@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Header>
+    <Header
+    :hamburgerMenuList="hamburgerMenuList">
       <!-- navbar -->
       <!-- hamburgher menu -->
 
@@ -52,6 +53,18 @@ export default {
     Main,
     Footer,
   },
+  data(){
+    return{
+      hamburgerMenuList: [
+        "Home",
+        "Meet The Band",
+        "Live Dates",
+        "Latest News",
+        "Albums",
+        "Fans"
+      ]
+    }
+  }
 };
 </script>
 
