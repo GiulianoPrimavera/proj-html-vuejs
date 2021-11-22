@@ -13,12 +13,14 @@
 
         <div class="hamburger_menu_collapse">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Meet The Band</a></li>
+            <li v-for="item, i in hamburgerMenuList"
+            :key="i"
+            ><a href="#">{{item}}</a></li>
+            <!-- <li><a href="#">Meet The Band</a></li>
             <li><a href="#">Live Dates</a></li>
             <li><a href="#">Latest News</a></li>
             <li><a href="#">Albums</a></li>
-            <li><a href="#">Fans</a></li>
+            <li><a href="#">Fans</a></li> -->
           </ul>
         </div>
       </div>
@@ -42,6 +44,9 @@
 <script>
 export default {
   name: "Header",
+  props: {
+      hamburgerMenuList: Array
+  },
   methods: {
       hamburgerMenu(){
           //quando viene premuta l'icona viene visualizzata l'altra icona e viene visualizzato l'hamburger menu espanso
