@@ -1,17 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header>
+    <!-- navbar -->
+    <!-- hamburgher menu --> 
+    </Header> 
+
+
+    <Main>
+
+    <!-- Sezione Hero
+        titolo
+        sottotitolo
+        bottoni link -->
+
+    <!-- Sezione Brake
+        titolo
+        sottotitolo -->
+
+    <!-- Sezione Notizie 
+        titolo
+        sottotitolo
+        cards notizie-->
+
+    <!-- Sezione Play Sample 
+        testo
+        bottone play-->
+
+    <!-- Sezione Live Dates 
+        titolo
+        sottotitolo
+        ul delle date
+        li accordion-->
+    
+    </Main>
+
+
+    <Footer>
+        <!-- navbar footer -->
+        <!-- copyright e social link -->
+    </Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue"
+import Main from "./components/Main.vue"
+import Footer from "./components/Footer.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Main,
+    Footer
   }
 }
 </script>
@@ -22,7 +63,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
