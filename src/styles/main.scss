@@ -14,10 +14,16 @@
         
         h2{
             padding: 40px 0;
-            border-bottom: 1px solid $mid_gray;
         }
         p{
             padding: 40px 0;
+        }
+
+        .div_line{
+            height: 2px;
+            background-color: $mid_gray;
+            width: 300px;
+            border-radius: 10px;
         }
     }
 
@@ -52,11 +58,17 @@
             grid-gap: 25px;
             
             .news_card{
+                position: relative;
                 overflow: hidden;
                 
                 .news_card_text_container{
                     padding: 20px;
                     background-color: $charade_2;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    transition: .5s;
                     h3{
                         color: $color_red;
                     }
@@ -67,13 +79,10 @@
 
                 &.wide_card{
                     grid-column: 1/3;
-                    
                     .news_card_image_container{
-                        height: 70%;
                         img{
                             width: 100%;
                             height: 100%;
-                            object-fit: cover;
                         }
                     }
                     
@@ -83,11 +92,10 @@
                 }
                 &.narrow_card{
                     .news_card_image_container{
-                        height: 80%;
+                        height: 100%;
                         img{
-                            width: 100%;
                             height: 100%;
-                            object-fit: cover;
+                            object-position: center;
                         }
                     }
                     
@@ -105,6 +113,41 @@
                 &.card_6{
                     grid-column: 3/4;
                     grid-row: 3/5;
+                }
+
+                .hover_link{
+                    a{
+                        font-weight: bold;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ea4a5586;    
+                        transform: translateX(-110%);
+                        transition: .3s;
+                    }
+                }
+                &:hover{
+                    .hover_link{
+                        a{
+                            font-weight: bold;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ea4a5586;  
+                        transform: translateX(0);
+                        }
+                    }
+                    .news_card_text_container{
+                        transform: translateY(100%);
+                    }
                 }
                 
             }
@@ -153,7 +196,8 @@
     }
 
     .live_dates{
-
-        
+        background-color: $charade;
+        display: flex;
+        justify-content: center;
     }
 }

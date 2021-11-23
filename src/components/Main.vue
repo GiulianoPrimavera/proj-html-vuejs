@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-
     <div class="brake">
       <!-- sezione di testo (si ripete 3 volte nel codice) -->
       <div class="main_text_section">
@@ -8,6 +7,8 @@
         <div class="brake_red_line"></div>
 
         <h2>Music Is Life</h2>
+        <div class="div_line"></div>
+
         <p class="small_text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
           ea at explicabo adipisci doloremque quae non quam ab, vitae nisi
@@ -21,6 +22,8 @@
       <!-- sezione titolo delle news -->
       <div class="main_text_section">
         <h2>Latest Band News</h2>
+        <div class="div_line"></div>
+
         <p class="small_text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
           ea at explicabo adipisci doloremque quae non quam ab, vitae nisi
@@ -31,7 +34,12 @@
 
       <!-- contenitore delle news -->
       <div class="news_container">
-        <div class="news_card wide_card">
+        <div class="news_card card_1 wide_card">
+          <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>Technology and music</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog_music_techo.jpg"
@@ -40,7 +48,7 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>Technology and music</h3>
             <p class="small_text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
               sequi?
@@ -48,6 +56,11 @@
           </div>
         </div>
         <div class="news_card card_2 narrow_card">
+           <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>Taking it back to the old school</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog-post1.jpg"
@@ -56,7 +69,7 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>Taking it back to the old school</h3>
             <p class="small_text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
               dicta.
@@ -64,6 +77,11 @@
           </div>
         </div>
         <div class="news_card card_3 narrow_card">
+          <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>While my guitar gently weeps</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog-post3.jpg"
@@ -72,7 +90,7 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>While my guitar gently weeps</h3>
             <p class="small_text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
               possimus!
@@ -80,6 +98,11 @@
           </div>
         </div>
         <div class="news_card card_4 narrow_card">
+          <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>It just sounds better</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog-post4.jpg"
@@ -88,14 +111,19 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>It just sounds better</h3>
             <p class="small_text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
               animi!
             </p>
           </div>
         </div>
-        <div class="news_card wide_card">
+        <div class="news_card card_5 wide_card">
+          <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>The flavor of rock</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog_flavor_rock.jpg"
@@ -104,7 +132,7 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>The flavor of rock</h3>
             <p class="small_text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Obcaecati, alias.
@@ -112,6 +140,11 @@
           </div>
         </div>
         <div class="news_card card_6 narrow_card">
+          <!-- il link compare quando la card è in hover -->
+          <div class="hover_link">
+            <a href="#"><p>Sharing the stage with a Legend</p></a>
+          </div>
+
           <div class="news_card_image_container">
             <img
               src="@/assets/images/blog-post2.jpg"
@@ -120,7 +153,7 @@
           </div>
 
           <div class="news_card_text_container">
-            <h3>Titolo</h3>
+            <h3>Sharing the stage with a Legend</h3>
             <p class="small_text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Doloremque, praesentium.
@@ -156,9 +189,25 @@
     </div>
 
     <div class="live_dates">
-      
-    </div>
+      <div class="main_text_section">
 
+        <h2>Live dates</h2>
+        <div class="div_line"></div>
+
+        <p class="small_text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+          ea at explicabo adipisci doloremque quae non quam ab, vitae nisi
+          porro, nihil quisquam id vel provident suscipit architecto dolores
+          perspiciatis!
+        </p>
+      </div>
+
+      <div class="live_dates_list">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
