@@ -32,64 +32,69 @@
       <div class="news_container">
         <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog_music_techo.jpg" alt="" />
+            <img src="@/assets/images/blog_music_techo.jpg" alt="Technology and music" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, sequi?</p>
           </div>
         </div>
-        <div class="news_card card_2">
+        <div class="news_card card_2 narrow_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog-post1.jpg" alt="Taking it back to the old school" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dicta.</p>
           </div>
         </div>
-        <div class="news_card card_3">
+        <div class="news_card card_3 narrow_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog-post3.jpg" alt="While my guitar gently weeps" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, possimus!</p>
           </div>
         </div>
-        <div class="news_card card_4">
+        <div class="news_card card_4 narrow_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog-post4.jpg" alt="It just soudns better" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, animi!</p>
           </div>
         </div>
         <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog_flavor_rock.jpg" alt="" />
+            <img src="@/assets/images/blog_flavor_rock.jpg" alt="The flavor of rock" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, alias.</p>
           </div>
         </div>
-        <div class="news_card card_6">
+        <div class="news_card card_6 narrow_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog-post2.jpg" alt="Sharing the stage with a Legend" />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">sottotitolo</p>
+            <p class="small_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, praesentium.</p>
           </div>
         </div>
+      </div>
+
+      <!-- bottone "vedi tutte le news" (si ripete due volte) -->
+      <div class="view_button">
+        <a href="#">VIEW ALL LATEST NEWS</a>
       </div>
     </div>
 
