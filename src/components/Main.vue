@@ -203,14 +203,21 @@
 
       <div class="live_dates_list">
         <ul>
-          <li v-for="item, i in liveDatesEvents" :key="i" 
-          :class="itemClickato ? 'item_opened' : ''">
+          <li
+            v-for="(item, i) in liveDatesEvents"
+            :key="i"
+            :class="item.itemClickato ? 'item_opened' : ''"
+          >
             <div class="live_dates_icon_container">
-              <i class="fas fa-plus" @click="clickedItem" v-if="!itemClickato"></i>
+              <i
+                class="fas fa-plus"
+                @click="clickedItem"
+                v-if="!item.itemClickato"
+              ></i>
               <i class="fas fa-minus" @click="clickedItem" v-else></i>
             </div>
             <div class="position">
-              <h3>{{item.date}}  {{item.position.toUpperCase()}}</h3>
+              <h3>{{ item.date }} {{ item.position.toUpperCase() }}</h3>
             </div>
 
             <div class="list_item_hidden">
@@ -233,6 +240,11 @@
             </div>
           </li>
         </ul>
+
+
+        <div class="view_button">
+          <a href="#"><p>VIEW ALL LIVE DATES</p></a>
+        </div>
       </div>
     </div>
   </div>
@@ -242,22 +254,25 @@
 export default {
   name: "Main",
   props: {
-    liveDatesEvents: Array
+    liveDatesEvents: Array,
   },
-  data(){
-    return{
-      itemClickato: false,
-    }
+  data() {
+    return {
+      /* itemClickato: false, */
+    };
   },
   methods: {
-    clickedItem(){
-      if(this.itemClickato === false){
-        this.itemClickato = true
-      }else if(this.itemClickato === true){
-        this.itemClickato = false
+    clickedItem() {
+      //devo recuperare il singolo item (forse con la :key?)
+      /* let item = this.liveDatesEvents[key] */
+
+      if (this.itemClickato === false) {
+        this.itemClickato = true;
+      } else if (this.itemClickato === true) {
+        this.itemClickato = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
