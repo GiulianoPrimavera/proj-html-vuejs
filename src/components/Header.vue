@@ -37,7 +37,7 @@
       <div class="hero_text">
         <h1>Untold Stories</h1>
 
-        <p><em>There is an untold story behind every favorite song.</em></p>
+        <p class="big_text"><em>There is an untold story behind every favorite song.</em></p>
 
         <div class="hero_buttons">
           <a href="#" id="latest_album" class="hero_focus" @click="buttonFocus"
