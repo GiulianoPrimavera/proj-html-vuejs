@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+
     <div class="brake">
       <!-- sezione di testo (si ripete 3 volte nel codice) -->
       <div class="main_text_section">
@@ -32,62 +33,98 @@
       <div class="news_container">
         <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog_music_techo.jpg" alt="Technology and music" />
+            <img
+              src="@/assets/images/blog_music_techo.jpg"
+              alt="Technology and music"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, sequi?</p>
+            <p class="small_text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+              sequi?
+            </p>
           </div>
         </div>
         <div class="news_card card_2 narrow_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog-post1.jpg" alt="Taking it back to the old school" />
+            <img
+              src="@/assets/images/blog-post1.jpg"
+              alt="Taking it back to the old school"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dicta.</p>
+            <p class="small_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              dicta.
+            </p>
           </div>
         </div>
         <div class="news_card card_3 narrow_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog-post3.jpg" alt="While my guitar gently weeps" />
+            <img
+              src="@/assets/images/blog-post3.jpg"
+              alt="While my guitar gently weeps"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, possimus!</p>
+            <p class="small_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              possimus!
+            </p>
           </div>
         </div>
         <div class="news_card card_4 narrow_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog-post4.jpg" alt="It just soudns better" />
+            <img
+              src="@/assets/images/blog-post4.jpg"
+              alt="It just soudns better"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, animi!</p>
+            <p class="small_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              animi!
+            </p>
           </div>
         </div>
         <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog_flavor_rock.jpg" alt="The flavor of rock" />
+            <img
+              src="@/assets/images/blog_flavor_rock.jpg"
+              alt="The flavor of rock"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, alias.</p>
+            <p class="small_text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati, alias.
+            </p>
           </div>
         </div>
         <div class="news_card card_6 narrow_card">
           <div class="news_card_image_container">
-            <img src="@/assets/images/blog-post2.jpg" alt="Sharing the stage with a Legend" />
+            <img
+              src="@/assets/images/blog-post2.jpg"
+              alt="Sharing the stage with a Legend"
+            />
           </div>
 
           <div class="news_card_text_container">
             <h3>Titolo</h3>
-            <p class="small_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, praesentium.</p>
+            <p class="small_text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque, praesentium.
+            </p>
           </div>
         </div>
       </div>
@@ -98,9 +135,30 @@
       </div>
     </div>
 
-    <div class="play_sample"></div>
+    <div class="play_sample">
+      <div class="quote_container">
+        <p class="big_text">
+          <em>
+            "I just ilstened to it adn said to myself, "Man, I really love this
+            album." Still, today, it just sounds so fresh. It sounds full of
+            ideas. These guys knew what they were doing. THey're good. And
+            they're inventive. I havent't heard aniything this yeat that is that
+            inventive. I don't really ecpect to."
+          </em>
+        </p>
 
-    <div class="live_dates"></div>
+        <div class="play_button">
+          <a href="#">
+            <i class="fas fa-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="live_dates">
+      
+    </div>
+
   </div>
 </template>
 

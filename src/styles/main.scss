@@ -128,4 +128,32 @@
             background-color: white;
         }
     }
+
+    .play_sample{
+        background-image: url("assets/images/home-testimonial-parallax.jpg");
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .quote_container{
+            width: 50%;
+            text-align: center;
+            p{
+                padding-bottom: 20px;
+                line-height: 50px;
+            }
+            .play_button a{
+                color: white;
+                display: inline-block;
+                background-color: $color_red;
+                padding: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .live_dates{
+
+        
+    }
 }
