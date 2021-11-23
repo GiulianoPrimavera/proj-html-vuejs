@@ -94,7 +94,7 @@
 
       <!-- bottone "vedi tutte le news" (si ripete due volte) -->
       <div class="view_button">
-        <a href="#">VIEW ALL LATEST NEWS</a>
+        <a href="#"><p>VIEW ALL LATEST NEWS</p></a>
       </div>
     </div>
 

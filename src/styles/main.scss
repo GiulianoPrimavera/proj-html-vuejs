@@ -119,5 +119,13 @@
         right: 0;
         padding: 50px 0;
         text-align: center;
+        transition: .3s;
+
+        &:hover{
+            p{
+                color: black;
+            }
+            background-color: white;
+        }
     }
 }
