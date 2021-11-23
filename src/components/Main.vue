@@ -30,9 +30,9 @@
 
       <!-- contenitore delle news -->
       <div class="news_container">
-        <div class="news_card card_1">
+        <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog_music_techo.jpg" alt="" />
           </div>
 
           <div class="news_card_text_container">
@@ -70,9 +70,9 @@
             <p class="small_text">sottotitolo</p>
           </div>
         </div>
-        <div class="news_card card_5">
+        <div class="news_card wide_card">
           <div class="news_card_image_container">
-            <img src="" alt="" />
+            <img src="@/assets/images/blog_flavor_rock.jpg" alt="" />
           </div>
 
           <div class="news_card_text_container">
