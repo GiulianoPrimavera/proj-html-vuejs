@@ -1,8 +1,9 @@
 @import "variables.scss";
 
 .main{
+
     .main_text_section{
-        // text-align: center;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,6 +11,7 @@
         width: 50%;
         padding: 40px 0;
         position: relative;
+        
         h2{
             padding: 40px 0;
             border-bottom: 1px solid $mid_gray;
@@ -18,6 +20,7 @@
             padding: 40px 0;
         }
     }
+
     .brake_red_line{
         position: absolute;
         height: 16px;
@@ -25,6 +28,7 @@
         width: 500px;
         top: 0;
     }
+
     .brake{
         background-color: $charade_2;
         display: flex;
@@ -37,18 +41,33 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 200px;
+        position: relative;  
+
         .news_container{
+            
             width: 65%;
             display: inline-grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 300px;
             grid-gap: 25px;
+            
             .news_card{
-                background-color: lightcoral;
-                border: 1px solid;
                 overflow: hidden;
+                
+                .news_card_text_container{
+                    padding: 20px;
+                    background-color: $charade_2;
+                    h3{
+                        color: $color_red;
+                    }
+                    p{
+                        padding: 10px 0;
+                    }
+                }
+
                 &.wide_card{
                     grid-column: 1/3;
+                    
                     .news_card_image_container{
                         height: 70%;
                         img{
@@ -57,22 +76,48 @@
                             object-fit: cover;
                         }
                     }
+                    
+                    .news_card_text_container{
+                        height: 30%;
+                    }
+                }
+                &.narrow_card{
+                    .news_card_image_container{
+                        height: 80%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                    .news_card_text_container{
+                        height: 20%;
+                    }
                 }
                 &.card_2{
                     grid-column: 3/4;
                     grid-row: 1/3;
                 }
                 &.card_3, &.card_4{
-                    /* grid-column: 1/2; */
                     grid-row: 2/4;
                 }
                 &.card_6{
                     grid-column: 3/4;
                     grid-row: 3/5;
                 }
-
                 
             }
         }
+    }
+
+    .view_button{
+        background-color: $color_red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 0;
+        text-align: center;
     }
 }
