@@ -29,7 +29,9 @@
         li accordion-->
     </Main>
 
-    <Footer>
+    <Footer
+    :hamburgerMenuList="hamburgerMenuList"
+    >
       <!-- navbar footer -->
       <!-- copyright e social link -->
     </Footer>
@@ -61,23 +63,28 @@ export default {
       liveDatesEvents: [
         {
           date: "17/08/2020",
-          position: "GEM FESTIVAL 2020 ANAKALIA, GEORGIA"
+          position: "GEM FESTIVAL 2020 ANAKALIA, GEORGIA",
+          itemClickato: false
         },
         {
           date: "24/09/2020",
-          position: "groovefest dominical republic"
+          position: "groovefest dominical republic",
+          itemClickato: false
         },
         {
           date: "31/10/2020",
-          position: "oasis festival 2020 Marrakech, Morocco"
+          position: "oasis festival 2020 Marrakech, Morocco",
+          itemClickato: false
         },
         {
           date: "07/11/2020",
-          position: "moga festival - Essaouria, Morocco"
+          position: "moga festival - Essaouria, Morocco",
+          itemClickato: false
         },
         {
           date: "10/12/2020",
-          position: "Envision Festival -Uvita, Costa Rica"
+          position: "Envision Festival -Uvita, Costa Rica",
+          itemClickato: false
         }
       ]
     }
@@ -89,4 +96,5 @@ export default {
 @import "styles/app";
 @import "styles/header";
 @import "styles/main";
+@import "styles/footer";
 </style>

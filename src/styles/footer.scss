@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+.footer{
+    
+    .navbar_footer{
+        background-color: $charade_2;
+        display: flex;
+        .navbar_footer_logo_container{
+            flex-grow: 1;
+            padding: 40px;
+            
+            img{
+                height: 50px;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            li{
+                padding: 10px 10px;
+            
+                &:hover{
+                    a{
+                        color: white,
+                    }
+                }
+            }
+        }
+    }
+
+    .copy_nlinks{
+        background-color: $charade;
+        display: flex;
+        align-items: center;
+
+        .copyrights{
+            flex-grow: 1;
+            padding: 50px;
+            p{
+                font-size: 10px;
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 10px;
+            a{
+                width: 40px;
+                height: 40px;
+                background-color: $charade_2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $mid_gray;
+
+                &:active{
+                    color: white;
+                }
+            }
+        }
+    }
+}
