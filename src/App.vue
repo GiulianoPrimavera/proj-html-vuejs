@@ -1,18 +1,13 @@
 <template>
   <div id="app">
     <Header
-    :hamburgerMenuList="hamburgerMenuList">
-      <!-- navbar -->
-      <!-- hamburgher menu -->
-
-       <!-- Sezione Hero
-        titolo
-        sottotitolo
-        bottoni link -->
-
+    :hamburgerMenuList="hamburgerMenuList"
+    >
     </Header>
 
-    <Main>
+    <Main
+    :liveDatesEvents="liveDatesEvents"
+    >
      
       <!-- Sezione Brake
         titolo
@@ -62,6 +57,28 @@ export default {
         "Latest News",
         "Albums",
         "Fans"
+      ],
+      liveDatesEvents: [
+        {
+          date: "17/08/2020",
+          position: "GEM FESTIVAL 2020 ANAKALIA, GEORGIA"
+        },
+        {
+          date: "24/09/2020",
+          position: "groovefest dominical republic"
+        },
+        {
+          date: "31/10/2020",
+          position: "oasis festival 2020 Marrakech, Morocco"
+        },
+        {
+          date: "07/11/2020",
+          position: "moga festival - Essaouria, Morocco"
+        },
+        {
+          date: "10/12/2020",
+          position: "Envision Festival -Uvita, Costa Rica"
+        }
       ]
     }
   }

@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="news_card card_2 narrow_card">
-           <!-- il link compare quando la card è in hover -->
+          <!-- il link compare quando la card è in hover -->
           <div class="hover_link">
             <a href="#"><p>Taking it back to the old school</p></a>
           </div>
@@ -190,7 +190,6 @@
 
     <div class="live_dates">
       <div class="main_text_section">
-
         <h2>Live dates</h2>
         <div class="div_line"></div>
 
@@ -204,7 +203,35 @@
 
       <div class="live_dates_list">
         <ul>
-          <li></li>
+          <li v-for="item, i in liveDatesEvents" :key="i" 
+          :class="itemClickato ? 'item_opened' : ''">
+            <div class="live_dates_icon_container">
+              <i class="fas fa-plus" @click="clickedItem" v-if="!itemClickato"></i>
+              <i class="fas fa-minus" @click="clickedItem" v-else></i>
+            </div>
+            <div class="position">
+              <h3>{{item.date}}  {{item.position.toUpperCase()}}</h3>
+            </div>
+
+            <div class="list_item_hidden">
+              <div class="map_container">
+                <img src="@/assets/images/map.png" alt="map" />
+              </div>
+
+              <div class="description_container">
+                <h3>Untold Stories</h3>
+                <p class="small_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium nostrum, laborum voluptatibus vel debitis
+                  dignissimos tempore perspiciatis sunt quis harum eius!
+                  Laboriosam soluta quis corporis officia doloribus iusto fugit
+                  voluptates accusamus necessitatibus.
+                </p>
+
+                <a href="#">book now</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -214,6 +241,23 @@
 <script>
 export default {
   name: "Main",
+  props: {
+    liveDatesEvents: Array
+  },
+  data(){
+    return{
+      itemClickato: false,
+    }
+  },
+  methods: {
+    clickedItem(){
+      if(this.itemClickato === false){
+        this.itemClickato = true
+      }else if(this.itemClickato === true){
+        this.itemClickato = false
+      }
+    }
+  }
 };
 </script>
 

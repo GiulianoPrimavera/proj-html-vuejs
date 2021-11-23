@@ -198,6 +198,81 @@
     .live_dates{
         background-color: $charade;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+
+        .live_dates_list{
+
+            width: 70%;
+            
+            li{
+                height: 55px;
+                overflow: hidden;
+                list-style: none;
+                margin: 10px 0;
+                width: 100%;
+                background-color: $charade_2;
+                transition: .3s;
+
+                .live_dates_icon_container{
+                    display: inline-block;
+                    padding: 20px;
+                    i{
+                        padding: 3px;
+                        color: white;
+                        font-size: 10px;
+                        &:hover{
+                            background-color: $color_red;
+                        }
+                    }
+                }
+                .position{
+                    display: inline-block;
+                    h3{
+                        color: $color_red;
+                    }
+                }
+                .list_item_hidden{
+                    padding: 40px;
+                    display: flex;
+                    
+                    .map_container{
+                        width: 30%;
+                        img{
+                            width: 300px;
+                            height: 200px;
+                            object-fit: cover;
+                        }
+                    }
+                    .description_container{
+                        padding: 0 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h3{
+                            padding-top: 10px;
+                            color: white
+                        }
+                        p{
+                            padding: 10px 0;
+                            line-height: 30px;
+                        }
+                        a{
+                            align-self: start;
+                            background-color: $color_red;
+                            padding: 10px 30px;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+
+                &.item_opened{
+                    height: 350px;
+                }
+            }
+        
+        }
     }
 }
