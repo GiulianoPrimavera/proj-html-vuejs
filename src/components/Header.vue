@@ -10,19 +10,24 @@
       <div class="hamburger_menu">
         <div class="hamburger_menu_icon" @click="hamburgerMenu">
           <i class="fas fa-bars icon_active"></i>
-          <i class="fas fa-times"></i>
+          <!-- <i class="fas fa-times"></i> -->
         </div>
 
-        <div class="hamburger_menu_collapse">
+        <div class="hamburger_menu_collapse" @click="hamburgerMenu">
+          <div class="navbar_logo_container">
+            <a href="#">
+              <img src="@/assets/images/avada-music-logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="hamburger_menu_icon">
+            <i class="fas fa-times"></i>
+          </div>
+
           <ul>
             <li v-for="(item, i) in hamburgerMenuList" :key="i">
               <a href="#">{{ item }}</a>
             </li>
-            <!-- <li><a href="#">Meet The Band</a></li>
-            <li><a href="#">Live Dates</a></li>
-            <li><a href="#">Latest News</a></li>
-            <li><a href="#">Albums</a></li>
-            <li><a href="#">Fans</a></li> -->
           </ul>
         </div>
       </div>
@@ -36,9 +41,11 @@
 
         <div class="hero_buttons">
           <a href="#" id="latest_album" class="hero_focus" @click="buttonFocus"
-            >LATEST ALBUM</a
+            ><strong>LATEST ALBUM</strong></a
           >
-          <a href="#" id="live_dates" @click="buttonFocus">LIVE DATES</a>
+          <a href="#" id="live_dates" @click="buttonFocus"
+            ><strong>LIVE DATES</strong></a
+          >
         </div>
       </div>
     </div>
@@ -60,9 +67,6 @@ export default {
       hamMenuBars.classList.toggle("icon_active");
       hamMenuTimes.classList.toggle("icon_active");
       hamMenuExpand.classList.toggle("hamburger_menu_expand");
-
-      const navBar = document.querySelector(".navbar");
-      navBar.classList.toggle("navbar_bg_red");
     },
     buttonFocus() {
       const latestAlbum = document.getElementById("latest_album");
