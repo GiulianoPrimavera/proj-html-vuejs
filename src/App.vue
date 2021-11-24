@@ -64,27 +64,27 @@ export default {
         {
           date: "17/08/2020",
           position: "GEM FESTIVAL 2020 ANAKALIA, GEORGIA",
-          /* itemClickato: false */
+          itemClickato: false
         },
         {
           date: "24/09/2020",
           position: "groovefest dominical republic",
-          /* itemClickato: false */
+          itemClickato: false
         },
         {
           date: "31/10/2020",
           position: "oasis festival 2020 Marrakech, Morocco",
-          /* itemClickato: false */
+          itemClickato: false
         },
         {
           date: "07/11/2020",
           position: "moga festival - Essaouria, Morocco",
-          /* itemClickato: false */
+          itemClickato: false
         },
         {
           date: "10/12/2020",
           position: "Envision Festival -Uvita, Costa Rica",
-          /* itemClickato: false */
+          itemClickato: false
         }
       ]
     }
