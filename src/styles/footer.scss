@@ -21,11 +21,15 @@
 
             li{
                 padding: 10px 10px;
-            
+                opacity: .5;
+                a{
+                    font-size: 14px;
+                }
                 &:hover{
-                    a{
-                        color: white,
-                    }
+                    opacity: 1;
+                }
+                &.item_state_active{
+                    opacity: 1;  
                 }
             }
         }

@@ -8,8 +8,13 @@
       </div>
 
       <ul>
-        <li v-for="(item, i) in hamburgerMenuList" :key="i">
-          <a href="#" class="small_text">{{ item }}</a>
+        <li 
+        v-for="(item, i) in hamburgerMenuList" 
+        :key="i" 
+        :class="item.state ? 'item_state_active' : ''"
+        @click="liActive(i), $emit('itemIndex', i)"
+        >
+          <a href="#">{{ item.title }}</a>
         </li>
       </ul>
     </div>
@@ -44,6 +49,7 @@ export default {
   name: "Footer",
   props: {
     hamburgerMenuList: Array,
+    liActive: Function
   },
 };
 </script>

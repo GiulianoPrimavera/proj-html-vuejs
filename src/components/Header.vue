@@ -10,7 +10,6 @@
       <div class="hamburger_menu">
         <div class="hamburger_menu_icon" @click="hamburgerMenu">
           <i class="fas fa-bars icon_active"></i>
-          <!-- <i class="fas fa-times"></i> -->
         </div>
 
         <div class="hamburger_menu_collapse" @click="hamburgerMenu">
@@ -25,8 +24,13 @@
           </div>
 
           <ul>
-            <li v-for="(item, i) in hamburgerMenuList" :key="i">
-              <a href="#">{{ item }}</a>
+            <li
+              v-for="(item, i) in hamburgerMenuList"
+              :key="i"
+              :class="item.state ? 'item_state_active' : ''"
+              @click="liActive(i), $emit('itemIndex', i)"
+            >
+              <a href="#">{{ item.title }}</a>
             </li>
           </ul>
         </div>
@@ -37,7 +41,9 @@
       <div class="hero_text">
         <h1>Untold Stories</h1>
 
-        <p class="big_text"><em>There is an untold story behind every favorite song.</em></p>
+        <p class="big_text">
+          <em>There is an untold story behind every favorite song.</em>
+        </p>
 
         <div class="hero_buttons">
           <a href="#" id="latest_album" class="hero_focus" @click="buttonFocus"
@@ -57,6 +63,7 @@ export default {
   name: "Header",
   props: {
     hamburgerMenuList: Array,
+    liActive: Function
   },
   methods: {
     hamburgerMenu() {
@@ -74,7 +81,7 @@ export default {
       latestAlbum.classList.toggle("hero_focus");
       liveDates.classList.toggle("hero_focus");
     },
-  },
+  }
 };
 </script>
 

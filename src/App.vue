@@ -1,40 +1,18 @@
 <template>
   <div id="app">
     <Header
-    :hamburgerMenuList="hamburgerMenuList"
-    >
-    </Header>
+      :hamburgerMenuList="hamburgerMenuList"
+      :liActive="liActive"
+      @itemIndex="index"
+    ></Header>
 
-    <Main
-    :liveDatesEvents="liveDatesEvents"
-    >
-     
-      <!-- Sezione Brake
-        titolo
-        sottotitolo -->
+    <Main :liveDatesEvents="liveDatesEvents"></Main>
 
-      <!-- Sezione Notizie 
-        titolo
-        sottotitolo
-        cards notizie-->
-
-      <!-- Sezione Play Sample 
-        testo
-        bottone play-->
-
-      <!-- Sezione Live Dates 
-        titolo
-        sottotitolo
-        ul delle date
-        li accordion-->
-    </Main>
-
-    <Footer
-    :hamburgerMenuList="hamburgerMenuList"
-    >
-      <!-- navbar footer -->
-      <!-- copyright e social link -->
-    </Footer>
+    <Footer 
+    :hamburgerMenuList="hamburgerMenuList" 
+    :liActive="liActive"
+    @itemIndex="index"
+    ></Footer>
   </div>
 </template>
 
@@ -50,44 +28,74 @@ export default {
     Main,
     Footer,
   },
-  data(){
-    return{
+  data() {
+    return {
       hamburgerMenuList: [
-        "Home",
-        "Meet The Band",
-        "Live Dates",
-        "Latest News",
-        "Albums",
-        "Fans"
+        {
+          title: "Home",
+          state: true,
+        },
+        {
+          title: "Meet The Band",
+          state: false,
+        },
+        {
+          title: "Live Dates",
+          state: false,
+        },
+        {
+          title: "Latest News",
+          state: false,
+        },
+        {
+          title: "Albums",
+          state: false,
+        },
+        {
+          title: "Fans",
+          state: false,
+        },
       ],
       liveDatesEvents: [
         {
           date: "17/08/2020",
           position: "GEM FESTIVAL 2020 ANAKALIA, GEORGIA",
-          itemClickato: false
+          itemClickato: false,
         },
         {
           date: "24/09/2020",
           position: "groovefest dominical republic",
-          itemClickato: false
+          itemClickato: false,
         },
         {
           date: "31/10/2020",
           position: "oasis festival 2020 Marrakech, Morocco",
-          itemClickato: false
+          itemClickato: false,
         },
         {
           date: "07/11/2020",
           position: "moga festival - Essaouria, Morocco",
-          itemClickato: false
+          itemClickato: false,
         },
         {
           date: "10/12/2020",
           position: "Envision Festival -Uvita, Costa Rica",
-          itemClickato: false
+          itemClickato: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    liActive(index) {
+      //questo ciclo mette lo state a false per ogni elemento della lista che è a true
+      for (let i = 0; i < this.hamburgerMenuList.length; i++) {
+        if (this.hamburgerMenuList[i].state === true) {
+          this.hamburgerMenuList[i].state = false;
         }
-      ]
-    }
+      }
+      //qui metto lo stato a true dell'elemento cliccato
+      this.hamburgerMenuList[index].state = true;
+    },
   }
 };
 </script>
