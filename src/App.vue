@@ -3,7 +3,6 @@
     <Header
       :hamburgerMenuList="hamburgerMenuList"
       :liActive="liActive"
-      @itemIndex="index"
     ></Header>
 
     <Main :liveDatesEvents="liveDatesEvents"></Main>
@@ -11,9 +10,9 @@
     <Footer 
     :hamburgerMenuList="hamburgerMenuList" 
     :liActive="liActive"
-    @itemIndex="index"
     ></Footer>
-  </div>
+
+</div>
 </template>
 
 <script>
