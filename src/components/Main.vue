@@ -206,13 +206,13 @@
           <li
             v-for="(item, i) in liveDatesEvents"
             :key="i"
-            :class="item.itemClickato ? 'item_opened' : ''"
+            :class="itemClickato ? 'item_opened' : ''"
           >
             <div class="live_dates_icon_container">
               <i
                 class="fas fa-plus"
                 @click="clickedItem"
-                v-if="!item.itemClickato"
+                v-if="!itemClickato"
               ></i>
               <i class="fas fa-minus" @click="clickedItem" v-else></i>
             </div>
@@ -258,7 +258,7 @@ export default {
   },
   data() {
     return {
-      /* itemClickato: false, */
+      itemClickato: false,
     };
   },
   methods: {
